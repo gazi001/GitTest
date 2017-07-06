@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <script src="https://a.alipayobjects.com/g/h5-lib/alipayjsapi/3.0.3/alipayjsapi.inc.min.js"></script>
+
+<button id="J_btn_get" style="display:none" class="btn btn-default">读取数据</button>
+<button id="J_btn_set" style="display:none" class="btn btn-default">写入数据并打开新页面</button>
+<script>
+    var btnSet = document.querySelector('#J_btn_set');
+    var btnGet = document.querySelector('#J_btn_get');
+    if (ap.parseQueryString().for === 'sessionData') {
+        btnGet.style.display = 'block'
+    } else {
+        btnSet.style.display = 'block';
+    }
+    btnSet.addEventListener('click', function () {
+        ap.setSessionData({
+            data: {
+                cities: [
+                  {
+                      cityName: '杭州',
+                      adCode: '330100',
+                      spell: ' hangzhou'
+                  }
+                ],
+                provinceName: '浙江省',
+                countryName: '中国'
+            }
+        });
+        setTimeout(function () {
+            ap.pushWindow({
+                url: 'getSessionData-demo.html',
+                data: {
+                    for: 'sessionData'
+                }
+            });
+        }, 100);
+    });
+    btnGet.addEventListener('click', function () {
+        ap.getSessionData('cities', function (res) {
+            ap.alert(res.data.cities[0].cityName);
+        })
+    });
+</script>
+</body>
+
+</html>
