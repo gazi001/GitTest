@@ -1,0 +1,99 @@
+﻿{
+	"logo": "https://alipass.alipay.com//temps/free/logo.png",
+    "strip": "https://alipass.alipay.com//temps/free/strip.png",
+    "icon": "http://alipassprod.test.alipay.net/temps/free/icon.png",
+    "content": {
+    "evoucherInfo": {
+        "goodsId": "",
+        "title": "快顺科技",
+        "type": "eventTicket",
+        "product": "free",
+        "startDate": "2017-07-06 13:47:58",
+        "endDate": "2017-07-20 13:47:58",
+        "operation":  [{
+
+"message": "$ackCode$",
+
+"messageEncoding": "UTF-8",
+
+"format": "barcode",
+
+"altText": "$ackCode$"
+
+}],
+        "einfo": {
+            "logoText": "快顺科技",
+            "secondLogoText": "测试使用",
+            "headFields": [
+                {
+                    "key": "key_1",
+                    "label": "头部区块名称",
+                    "value": "头部区块内容",
+                    "type": "text"
+                }
+            ],
+            "primaryFields": [
+                {
+                    "key": "优惠类型",
+                    "label": "第一区块名称",
+                    "value": "第一区块内容",
+                    "type": "text"
+                }
+            ],
+            "secondaryFields": [
+                {
+                    "key": "key_2",
+                    "label": "第二区块名称",
+                    "value": "第二区块内容",
+                    "type": "text"
+                }
+            ],
+            "auxiliaryFields": [
+                {
+                    "key": "key_3",
+                    "label": "辅助区块名称",
+                    "value": "辅助区块内容",
+                    "type": "text"
+                }
+            ],
+            "backFields": []
+        },
+        "locations": []
+    },
+    "merchant": {
+        "mname": "杭州快顺科技有限公司",
+        "mtel": "",
+        "minfo": ""
+    },
+    "platform": {
+        "channelID": "2088201564809153",
+        "webServiceUrl": "https://alipass.alipay.com/builder/syncRecord.htm?tempId=2017070613480630921151134"
+    },
+    "style": {
+        "backgroundColor": "rgb(37,104,184)"
+    },
+    "fileInfo": {
+        "formatVersion": "2",
+        "canShare": true,
+        "canBuy": false,
+        "canPresent": true,
+        "serialNumber": "2017070615333745172451822",
+        "supportTaxi": "false",
+        "taxiSchemaUrl": "alipays://platformapi/startapp?appId=20000778&bizid=260&channel=71322"
+    },
+    "appInfo": {
+        "app": {
+            "android_appid": "",
+            "ios_appid": "",
+            "android_launch": "",
+            "ios_launch": "",
+            "android_download": "",
+            "ios_download": ""
+        },
+        "label": "快顺科技",
+        "message": ""
+    },
+    "source": "alipassprod",
+    "alipayVerify": []
+}
+}
