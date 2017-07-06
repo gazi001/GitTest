@@ -19,16 +19,14 @@ namespace AliPayTest.test
             //新建卡
             AlipayPassInstanceAddRequest request = new AlipayPassInstanceAddRequest();
             AlipayPassInstanceAddModel model = new AlipayPassInstanceAddModel();
-           
-
-
             request.BizContent = "{" +
             "\"tpl_id\":\"2017070616555935516915129\"," +
             "\"tpl_params\":\"{\\\"message\\\":\\\"https://alipass.alipay.com//temps/free/logo.png\\\"}\"," +
             "\"recognition_type\":\"1\"," +
-            "\"recognition_info\":\"{\\\"partner_id\\\":\\\"2016072900114972\\\",\\\"out_trade_no\\\":\\\"1234567\\\"}\"" +
+            "\"recognition_info\":\"{\\\"partner_id\\\":\\\"2088102168948072\\\",\\\"out_trade_no\\\":\\\"10000028484001\\\"}\"" +
             "  }";
             AlipayPassInstanceAddResponse response = client.Execute(request);
+
         }
     }
 }

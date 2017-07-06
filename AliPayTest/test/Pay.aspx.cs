@@ -36,10 +36,10 @@ namespace AliPayTest.test
             AlipayTradeWapPayRequest request = new AlipayTradeWapPayRequest();
             //创建支付信息实体
             AlipayTradeWapPayModel model = new AlipayTradeWapPayModel();
-            model.SellerId = "2088102168948072";
+            //model.SellerId = "2016072900114972";
             model.Subject = "测试支付";
             model.TotalAmount = "100.00";
-            model.OutTradeNo = "1000002838499";
+            model.OutTradeNo = "10000028484001";
             model.ProductCode = "QUICK_WAP_WAY";
             model.TimeoutExpress = "90m";
             request.SetBizModel(model);
